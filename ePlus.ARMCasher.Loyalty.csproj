@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\temp\ARM\ePlus.ARMCasher.Loyalty.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{36653B71-A0A2-4AF7-B752-DEC1E6D38349}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ePlus.ARMCasher.Loyalty</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>3.8.2.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper.StrongName">
+      <HintPath>lib\Dapper.StrongName.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.BELLib">
+      <HintPath>lib\Interop.BELLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.winpcxLib">
+      <HintPath>lib\Interop.winpcxLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.wscardax">
+      <HintPath>lib\Interop.wscardax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NLog">
+      <HintPath>lib\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="ePlus.ARMBusinessLogic">
+      <HintPath>lib\ePlus.ARMBusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ePlus.ARMCacheManager">
+      <HintPath>lib\ePlus.ARMCacheManager.dll</HintPath>
+    </Reference>
+    <Reference Include="ePlus.ARMCommon">
+      <HintPath>lib\ePlus.ARMCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="ePlus.ARMSecurity">
+      <HintPath>lib\ePlus.ARMSecurity.dll</HintPath>
+    </Reference>
+    <Reference Include="ePlus.ARMUtils">
+      <HintPath>lib\ePlus.ARMUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="ePlus.CommonEx">
+      <HintPath>..\ARM\ePlus.CommonEx.dll</HintPath>
+    </Reference>
+    <Reference Include="ePlus.Dictionary.BusinessObjects">
+      <HintPath>lib\ePlus.Dictionary.BusinessObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="ePlus.Discount2">
+      <HintPath>lib\ePlus.Discount2.dll</HintPath>
+    </Reference>
+    <Reference Include="ePlus.DiscountMobile">
+      <HintPath>lib\ePlus.DiscountMobile.dll</HintPath>
+    </Reference>
+    <Reference Include="ePlus.Interfaces">
+      <HintPath>lib\ePlus.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ePlus.KKMWrapper">
+      <HintPath>lib\ePlus.KKMWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="ePlus.LSPoint">
+      <HintPath>lib\ePlus.LSPoint.dll</HintPath>
+    </Reference>
+    <Reference Include="ePlus.Loyalty">
+      <HintPath>lib\ePlus.Loyalty.dll</HintPath>
+    </Reference>
+    <Reference Include="ePlus.Loyalty.AstraZeneca">
+      <HintPath>lib\ePlus.Loyalty.AstraZeneca.dll</HintPath>
+    </Reference>
+    <Reference Include="ePlus.Loyalty.Domestic">
+      <HintPath>lib\ePlus.Loyalty.Domestic.dll</HintPath>
+    </Reference>
+    <Reference Include="ePlus.Loyalty.GoldenMiddle">
+      <HintPath>lib\ePlus.Loyalty.GoldenMiddle.dll</HintPath>
+    </Reference>
+    <Reference Include="ePlus.Loyalty.Mindbox">
+      <HintPath>lib\ePlus.Loyalty.Mindbox.dll</HintPath>
+    </Reference>
+    <Reference Include="ePlus.Loyalty.Olextra">
+      <HintPath>lib\ePlus.Loyalty.Olextra.dll</HintPath>
+    </Reference>
+    <Reference Include="ePlus.Loyalty.PharmacyWallet">
+      <HintPath>lib\ePlus.Loyalty.PharmacyWallet.dll</HintPath>
+    </Reference>
+    <Reference Include="ePlus.Loyalty.RapidSoft">
+      <HintPath>lib\ePlus.Loyalty.RapidSoft.dll</HintPath>
+    </Reference>
+    <Reference Include="ePlus.Loyalty.SailPlay">
+      <HintPath>lib\ePlus.Loyalty.SailPlay.dll</HintPath>
+    </Reference>
+    <Reference Include="ePlus.Loyalty.SailPlay.Wpf">
+      <HintPath>lib\ePlus.Loyalty.SailPlay.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ePlus.Loyalty.Sber">
+      <HintPath>lib\ePlus.Loyalty.Sber.dll</HintPath>
+    </Reference>
+    <Reference Include="ePlus.MetaData">
+      <HintPath>..\ARM\ePlus.MetaData.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyDateAttribute.cs" />
+    <Compile Include="PosConnector.cs" />
+    <Compile Include="PosConnectorChannel.cs" />
+    <Compile Include="PosConnectorClient.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\BaseLoyaltyProgramEx.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\LpTransactionData.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\LoyaltyException.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\SmsAuthenticationFailedException.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\LoyaltyCardIsBlockedException.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\LoyaltyLogger.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\LoyaltyOperType.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\LoyaltyRollbackException.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\LoyaltyTransaction.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\LpTransResultBase.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\LpTransResult.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\PcxLpTransResult.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\NonCriticalInitializationException.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\PCXDiscount2Card.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\DiscountMobileCard.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\DiscountMobileLoyaltyProgram.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\CustomerCardInfo.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\CardReader.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\LoyaltyProgManager.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\LoyaltyProgramDebitArgs.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\AstraZeneca\AllowedBarcode.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\AstraZeneca\AstraZenecaLoyaltyProgram.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\AstraZeneca\AstraZenecaLoyaltyProgramRigla.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\AstraZeneca\AzTransactionsBl.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\AstraZeneca\Forms\FormConfirmationCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ePlus\ARMCasher\Loyalty\AstraZeneca\Forms\FormAccountInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ePlus\ARMCasher\Loyalty\Cotrols\ucBallance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ePlus\ARMCasher\Loyalty\Cotrols\ucDebit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ePlus\ARMCasher\Loyalty\Domestic\DomesticLoyaltyProgram.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Forms\FrmConfirmationCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ePlus\ARMCasher\Loyalty\Forms\FrmBalanceDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ePlus\ARMCasher\Loyalty\Forms\FrmScanBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ePlus\ARMCasher\Loyalty\Forms\FrmScanBarcodeEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ePlus\ARMCasher\Loyalty\Forms\FrmDebit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ePlus\ARMCasher\Loyalty\Forms\IFrmLoyality.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Forms\FrmLoyalitySelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ePlus\ARMCasher\Loyalty\Forms\IBallanceView.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Forms\FrmBallance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ePlus\ARMCasher\Loyalty\Forms\TextSetter.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Forms\FrmWaiting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ePlus\ARMCasher\Loyalty\GoldenMiddle\GMTransactionData.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\GoldenMiddle\GoldenMiddleLoyaltyProgram.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\GoldenMiddle\GoldenMiddle_Bl.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Mindbox\MindboxCard.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Mindbox\DiscountPromocode.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Mindbox\ILoyaltyFactory.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Mindbox\MindboxLoyaltyFactory.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Mindbox\MindboxLoyaltyProgram.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Mindbox\SmsAuthenticationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ePlus\ARMCasher\Loyalty\Mindbox\MindboxRecommendation.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Olextra\AllowedBarcode.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Olextra\OlextraLoyaltyProgram.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Olextra\OlextraTransactionsBl.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\PCX\ErrorMessage.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\PCX\PCXInternalException.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\PCX\PCXLoyaltyProgramEx.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\PCX\PCXTransactionData.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\PCX\PharmacyWalletLoyaltyProgram.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\PCX\SvyaznoyLoyaltyProgram.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\PCX\PCXUtils.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\PCX\SberbankLoyaltyProgram.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\PCX\Forms\FrmAddPCXPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ePlus\ARMCasher\Loyalty\LSPoint\ErrorInterpreter.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\LSPoint\GoodsInfo.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\LSPoint\LSPointCard.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\LSPoint\LSPointLoyaltyProgram.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\LSPoint\Utils.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\LSPoint\Forms\Bel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ePlus\ARMCasher\Loyalty\LSPoint\Forms\DialogCheque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ePlus\ARMCasher\Loyalty\LSPoint\Forms\DialogPerfOper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ePlus\ARMCasher\Loyalty\LSPoint\Forms\DialogRollback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ePlus\ARMCasher\Loyalty\LSPoint\Forms\EnterCardInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ePlus\ARMCasher\Loyalty\Properties\Resources.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Database\RapidCheque.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Database\RapidChequeDatabase.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\RapidSoft\RapidSoftHelper.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\RapidSoft\OperationStatus.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\RapidSoft\RollbackStatus.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\RapidSoft\CardStatus.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\RapidSoft\RapidSoftLoyaltyProgram.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\RapidSoft\Forms\EnterCardInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ePlus\ARMCasher\Loyalty\DiscountMobile\Forms\FrmAddPaymentDiscountMobile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ePlus\ARMCasher\Loyalty\DiscountMobile\Forms\FrmDiscountMobileAskCoupons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ePlus\ARMCasher\Loyalty\SailPlay\FormSailPlayUserRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ePlus\ARMCasher\Loyalty\SailPlay\SailPlayLoyaltyProgram.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\SailPlay\SailPlay_Bl.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\SailPlay\UserRegisterPresenter.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Xml\DiscountMobileUserItem.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Xml\DiscountMobileCouponList.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Xml\DiscountMobileCouponItem.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Xml\DiscountMobileUserList.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Xml\DiscountMobileUserResponse.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Xml\DiscountMobilePurchase.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Xml\DiscountMobilePosTokenStatus.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Xml\DiscountMobilePurchaseResponse.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Xml\DiscountMobilePurchaseListInner.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Xml\DiscountMobilePurchaseItemList.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Xml\DiscountMobilePurchaseItem.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Xml\DiscountMobilePurchaseList.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Xml\ThresholdsList.cs" />
+    <Compile Include="ePlus\ARMCasher\Loyalty\Xml\DiscountMobileLoyalty.cs" />
+    <Compile Include="ePlus\ARMCasherNew\Controls\ARMPCXBarcodeTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RapidSoft\Loyalty\PosConnector\PointRequest.cs" />
+    <Compile Include="RapidSoft\Loyalty\PosConnector\RequestBase.cs" />
+    <Compile Include="RapidSoft\Loyalty\PosConnector\GetBalanceRequest.cs" />
+    <Compile Include="RapidSoft\Loyalty\PosConnector\RefundByChequeRequest.cs" />
+    <Compile Include="RapidSoft\Loyalty\PosConnector\RefundRequest.cs" />
+    <Compile Include="RapidSoft\Loyalty\PosConnector\RollbackRequest.cs" />
+    <Compile Include="RapidSoft\Loyalty\PosConnector\FindTransactionsRequest.cs" />
+    <Compile Include="RapidSoft\Loyalty\PosConnector\ApplyDiscountRequest.cs" />
+    <Compile Include="RapidSoft\Loyalty\PosConnector\Cheque.cs" />
+    <Compile Include="RapidSoft\Loyalty\PosConnector\AdditionalField.cs" />
+    <Compile Include="RapidSoft\Loyalty\PosConnector\ChequeItem.cs" />
+    <Compile Include="RapidSoft\Loyalty\PosConnector\AdditionalFieldType.cs" />
+    <Compile Include="RapidSoft\Loyalty\PosConnector\ChequeRefundInfo.cs" />
+    <Compile Include="RapidSoft\Loyalty\PosConnector\ChequeRefundInfoFull.cs" />
+    <Compile Include="RapidSoft\Loyalty\PosConnector\ChequeItemRefundInfo.cs" />
+    <Compile Include="RapidSoft\Loyalty\PosConnector\ApplyDiscountResponse.cs" />
+    <Compile Include="RapidSoft\Loyalty\PosConnector\ChequeDiscountInfo.cs" />
+    <Compile Include="RapidSoft\Loyalty\PosConnector\ChequeItemDiscountInfo.cs" />
+    <Compile Include="RapidSoft\Loyalty\PosConnector\GetBalanceResponse.cs" />
+    <Compile Include="RapidSoft\Loyalty\PosConnector\RefundByChequeResponse.cs" />
+    <Compile Include="RapidSoft\Loyalty\PosConnector\RefundResponse.cs" />
+    <Compile Include="RapidSoft\Loyalty\PosConnector\RollbackResponse.cs" />
+    <Compile Include="RapidSoft\Loyalty\PosConnector\FindTransactionsResponse.cs" />
+    <Compile Include="RapidSoft\Loyalty\PosConnector\Transaction.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ePlus\ARMCasher\Loyalty\AstraZeneca\Forms\FormAccountInfo.resx" />
+    <EmbeddedResource Include="ePlus\ARMCasher\Loyalty\AstraZeneca\Forms\FormConfirmationCode.resx" />
+    <EmbeddedResource Include="ePlus\ARMCasher\Loyalty\Cotrols\ucBallance.resx" />
+    <EmbeddedResource Include="ePlus\ARMCasher\Loyalty\Cotrols\ucDebit.resx" />
+    <EmbeddedResource Include="ePlus\ARMCasher\Loyalty\DiscountMobile\Forms\FrmAddPaymentDiscountMobile.resx" />
+    <EmbeddedResource Include="ePlus\ARMCasher\Loyalty\DiscountMobile\Forms\FrmDiscountMobileAskCoupons.resx" />
+    <EmbeddedResource Include="ePlus\ARMCasher\Loyalty\Forms\FrmBalanceDetails.resx" />
+    <EmbeddedResource Include="ePlus\ARMCasher\Loyalty\Forms\FrmBallance.resx" />
+    <EmbeddedResource Include="ePlus\ARMCasher\Loyalty\Forms\FrmConfirmationCode.resx" />
+    <EmbeddedResource Include="ePlus\ARMCasher\Loyalty\Forms\FrmDebit.resx" />
+    <EmbeddedResource Include="ePlus\ARMCasher\Loyalty\Forms\FrmLoyalitySelect.resx" />
+    <EmbeddedResource Include="ePlus\ARMCasher\Loyalty\Forms\FrmScanBarcode.resx" />
+    <EmbeddedResource Include="ePlus\ARMCasher\Loyalty\Forms\FrmScanBarcodeEx.resx" />
+    <EmbeddedResource Include="ePlus\ARMCasher\Loyalty\Forms\FrmWaiting.resx" />
+    <EmbeddedResource Include="ePlus\ARMCasher\Loyalty\LSPoint\Forms\Bel.resx" />
+    <EmbeddedResource Include="ePlus\ARMCasher\Loyalty\LSPoint\Forms\DialogCheque.resx" />
+    <EmbeddedResource Include="ePlus\ARMCasher\Loyalty\LSPoint\Forms\DialogPerfOper.resx" />
+    <EmbeddedResource Include="ePlus\ARMCasher\Loyalty\LSPoint\Forms\DialogRollback.resx" />
+    <EmbeddedResource Include="ePlus\ARMCasher\Loyalty\LSPoint\Forms\EnterCardInfoForm.resx" />
+    <EmbeddedResource Include="ePlus\ARMCasher\Loyalty\Mindbox\SmsAuthenticationForm.resx" />
+    <EmbeddedResource Include="ePlus\ARMCasher\Loyalty\PCX\Forms\FrmAddPCXPayment.resx" />
+    <EmbeddedResource Include="ePlus\ARMCasher\Loyalty\Properties\Resources.resx" />
+    <EmbeddedResource Include="ePlus\ARMCasher\Loyalty\RapidSoft\Forms\EnterCardInfo.resx" />
+    <EmbeddedResource Include="ePlus\ARMCasher\Loyalty\RapidSoft\Forms\SettingsForm.resx" />
+    <EmbeddedResource Include="ePlus\ARMCasher\Loyalty\SailPlay\FormSailPlayUserRegister.resx" />
+    <EmbeddedResource Include="ePlus\ARMCasherNew\Controls\ARMPCXBarcodeTextBox.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
